@@ -14,7 +14,6 @@ public class dbConnection {
             MongoClientURI uri = new MongoClientURI(url);
             MongoClient mongoClient = new MongoClient(uri);
             database = mongoClient.getDatabase("LibraryApp");
-
             System.out.println("Connection done");
         }catch (Exception ex){
             System.out.println("Connection failed");
